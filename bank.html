@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta data  -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baap Er Bank</title>
+
+    <!-- CSS and JS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="bank.js"></script>
+</head>
+<body>
+    <main class="mx-auto px-8 py-16 w-3/4">
+        <h1 class="font-bold text-center text-5xl">Let's get some <span class="text-indigo-500">Moooooney</span>!!!</h1>
+
+        <div class="gap-8 grid grid-cols-3 my-8">
+            <div class="bg-lime-200 p-6 rounded-lg">
+                <h2 class="font-medium my-3 text-3xl">Deposit</h2>
+                <h3 class="my-2 text-2xl">$<span id="deposit-total">00</span></h3>
+            </div>
+            <div class="bg-pink-200 p-6 rounded-lg">
+                <h2 class="font-medium my-3 text-3xl">Withdraw</h2>
+                <h3 class="my-2 text-2xl">$<span id="withdraw-total">00</span></h3>
+            </div>
+            <div class="bg-blue-200 p-6 rounded-lg">
+                <h2 class="font-medium my-3 text-3xl">Balance</h2>
+                <h3 class="my-2 text-2xl">$<span id="balance">1152</span></h3>
+            </div>
+        </div>
+
+        <div class="gap-8 grid grid-cols-2 my-8">
+            <div class="bg-indigo-200 p-6 rounded-lg">
+                <h2 class="font-medium my-3 text-3xl">Deposit your money</h2>
+                <input class="focus:outline-green-300 my-3 p-2 placeholder:font-light placeholder:text-slate-400 rounded w-3/4" placeholder="00" type="number" id="deposit-input"><br>
+
+                <div class="flex items-center justify-between">
+                    <button class="active:ring-4 bg-teal-400 font-medium my-3 px-3 py-2 ring-teal-300 rounded text-white" type="submit" id="deposit-btn">Deposit</button>
+                    <p class="text-rose-500" id="invalid-deposit">Please enter a valid amount!</p>
+                </div>
+            </div>
+
+            <div class="bg-emerald-200 p-6 rounded-lg">
+                <h2 class="font-medium my-3 text-3xl">Withdraw your money</h2>
+                <input class="focus:outline-blue-300 my-3 p-2 placeholder:font-light placeholder:text-slate-400 rounded w-3/4" placeholder="00" type="number" id="withdraw-input"><br>
+
+                <div class="flex items-center justify-between">
+                    <button class="active:ring-4 bg-violet-400 font-medium my-3 px-3 py-2 ring-violet-300 rounded text-white" type="submit" id="withdraw-btn">Withdraw</button>
+                    <p class="text-rose-500" id="invalid-withdraw">Please enter a valid amount!</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

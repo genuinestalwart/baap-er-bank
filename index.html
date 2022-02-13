@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta data  -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in to the bank</title>
+
+    <!-- CSS and JS -->
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="login.js"></script>
+</head>
+<body>
+    <main class="mx-auto px-8 py-28 w-1/2">
+        <h1 class="font-bold text-center text-4xl">Welcome to my <span class="text-cyan-400">Baap Er Bank</span>!!!</h1>
+
+        <div class="bg-teal-200 my-8 px-8 py-6 rounded-lg">
+            <input class="focus:outline-cyan-400 my-3 p-2 placeholder:font-light placeholder:text-slate-400 rounded w-full" type="email" placeholder="enter your email" id="user-email" required><br>
+
+            <input class="focus:outline-cyan-400 my-3 p-2 placeholder:font-light placeholder:text-slate-400 rounded w-full" type="password" placeholder="enter your password" id="user-password" required><br>
+
+            <div class="flex items-center justify-between">
+                <button class="active:ring-4 bg-cyan-400 font-medium my-3 px-3 py-2 ring-cyan-300 rounded text-white" type="submit" id="login-btn">Log in</button>
+                <p class="text-rose-500" id="invalid-credentials">Invalid email or password!</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
